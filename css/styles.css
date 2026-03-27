@@ -160,6 +160,23 @@ body {
     color: #6b7280;
 }
 
+.topic-summary {
+    margin-top: 16px;
+    padding: 16px 20px;
+    background: #ffffff;
+    border: 1px solid #e2e4e9;
+    border-left: 4px solid #1e3a5f;
+    border-radius: 8px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.topic-summary strong {
+    color: #1e1e2d;
+    font-weight: 600;
+}
+
 .resource-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));

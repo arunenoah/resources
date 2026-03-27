@@ -30,6 +30,7 @@ const resources = [
     { category: "cc-ecosystem", title: "Awesome MCP Servers", provider: "Community", desc: "Curated list of MCP servers — Playwright, Figma, databases, APIs, and more. Connect Claude Code to anything.", type: "GitHub", url: "https://github.com/wong2/awesome-mcp-servers" },
     { category: "cc-ecosystem", title: "Claude-Optimized MCP Servers", provider: "Community", desc: "MCP servers specifically optimized and tested for Claude Code — browser automation, design tools, data pipelines.", type: "GitHub", url: "https://github.com/win4r/Awesome-Claude-MCP-Servers" },
     { category: "cc-ecosystem", title: "MCP Integration Guide", provider: "Anthropic", desc: "Official guide to configuring and using MCP servers with Claude Code — setup, authentication, and real-world integration examples.", type: "Docs", url: "https://code.claude.com/docs/en/mcp" },
+    { category: "cc-ecosystem", title: "Crusoe Cloud MCP Server", provider: "Crusoe AI", desc: "MCP server for Crusoe Cloud — manage GPU instances, inference endpoints, and AI infrastructure directly from Claude Code.", type: "Blog", url: "https://www.crusoe.ai/resources/blog/introducing-the-crusoe-cloud-mcp-server" },
 
     // ── AI Agents ──
     { category: "ai-agents", title: "Agentic AI with Andrew Ng", provider: "DeepLearning.AI", desc: "Build agentic AI systems with iterative, multi-step workflows. Learn reflection, tool use, planning, and multi-agent patterns.", type: "Course", url: "https://www.deeplearning.ai/courses/agentic-ai" },
@@ -46,6 +47,11 @@ const resources = [
     { category: "ai-agents", title: "IAM for AI Backends", provider: "AgentField", desc: "How DIDs and Verifiable Credentials enable trust, identity, and access control for autonomous AI agents.", type: "Blog", url: "https://agentfield.ai/blog/iam-ai-backends" },
     { category: "ai-agents", title: "The AI Backend", provider: "AgentField", desc: "Introduces the concept of AI backends as dedicated reasoning layers for autonomous decision-making in production systems.", type: "Blog", url: "https://agentfield.ai/blog/ai-backend" },
     { category: "ai-agents", title: "AI Idea Guide for Learners", provider: "arunenoah", desc: "Curated guide of AI project ideas and learning paths to help beginners and intermediate learners build real-world AI applications.", type: "GitHub", url: "https://github.com/arunenoah/Guide" },
+    { category: "ai-agents", title: "LangGraph", provider: "LangChain", desc: "Stateful, controllable agent orchestration — build agents with cycles, persistence, and human-in-the-loop workflows.", type: "GitHub", url: "https://github.com/langchain-ai/langgraph" },
+    { category: "ai-agents", title: "CrewAI", provider: "CrewAI", desc: "Role-based multi-agent framework — define agents with roles, goals, and tools that collaborate on complex tasks.", type: "GitHub", url: "https://github.com/crewAIInc/crewAI" },
+    { category: "ai-agents", title: "AutoGen", provider: "Microsoft", desc: "Flexible multi-agent conversation platform — agents chat, plan, and execute code together to solve problems.", type: "GitHub", url: "https://github.com/microsoft/autogen" },
+    { category: "ai-agents", title: "DSPy", provider: "Stanford NLP", desc: "Programming framework for LLM pipelines — replace prompt engineering with modular, optimizable programs.", type: "GitHub", url: "https://github.com/stanfordnlp/dspy" },
+    { category: "ai-agents", title: "MetaGPT", provider: "Community", desc: "Simulates an AI software company — multi-agent system where agents take roles like PM, architect, and engineer.", type: "GitHub", url: "https://github.com/FoundationAgents/MetaGPT" },
 
     // ── ML Foundations ──
     { category: "ml-foundations", title: "Stanford CS229: Machine Learning", provider: "Stanford University", desc: "Graduate-level course by Andrew Ng covering supervised learning, unsupervised learning, neural networks, SVMs, and reinforcement learning.", type: "Course", url: "https://see.stanford.edu/course/cs229" },
@@ -56,6 +62,7 @@ const resources = [
     { category: "deep-learning", title: "MIT 6.S191: Intro to Deep Learning", provider: "MIT", desc: "MIT's introductory deep learning program covering neural networks, CNNs, RNNs, transformers, and generative AI.", type: "Course", url: "https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI" },
     { category: "deep-learning", title: "Deep Learning in Python Track", provider: "DataCamp", desc: "Comprehensive 4-course track using PyTorch building models for image classification and text processing.", type: "Course", url: "https://www.datacamp.com/tracks/deep-learning-in-python" },
     { category: "deep-learning", title: "MIT Hands-on Deep Learning 2024", provider: "MIT OpenCourseWare", desc: "Hands-on deep learning course covering practical techniques with real-world applications.", type: "Course", url: "https://ocw.mit.edu/courses/15-773-hands-on-deep-learning-spring-2024/video_galleries/lecture-videos/" },
+    { category: "deep-learning", title: "Fast.ai Practical Deep Learning", provider: "fast.ai", desc: "Legendary free course teaching deep learning top-down — build real models from day one, then understand the theory.", type: "Course", url: "https://github.com/fastai/fastai" },
 
     // ── Large Language Models ──
     { category: "llm", title: "Developing Large Language Models", provider: "DataCamp", desc: "16-hour track covering LLM concepts, transformer architecture, Hugging Face, and building LLM applications with LangChain.", type: "Course", url: "https://www.datacamp.com/tracks/developing-large-language-models" },
@@ -66,6 +73,15 @@ const resources = [
 
     // ── MLOps ──
     { category: "mlops", title: "MLOps Concepts", provider: "DataCamp", desc: "2-hour course on deploying ML models to production covering feature stores and CI/CD pipelines.", type: "Course", url: "https://www.datacamp.com/courses/mlops-concepts" },
+    { category: "mlops", title: "Self-Healing Distributed PyTorch Training", provider: "Crusoe AI", desc: "How to build resilient distributed PyTorch training with Slurm on Kubernetes — automatic fault recovery and checkpoint resumption at scale.", type: "Blog", url: "https://www.crusoe.ai/resources/blog/self-healing-distributed-pytorch-training-with-slurm-on-crusoe-managed-kubernetes" },
+    { category: "mlops", title: "Reducing TTFT by CPUMaxxing Tokenization", provider: "Crusoe AI", desc: "Inference performance optimization — techniques to reduce time-to-first-token by moving tokenization bottlenecks to CPU for faster LLM serving.", type: "Blog", url: "https://www.crusoe.ai/resources/blog/reducing-ttft-by-cpumaxxing-tokenization" },
+    { category: "mlops", title: "Benchmarking Llama 3.1 Fine-Tuning on GB200 NVL72", provider: "Crusoe AI", desc: "Up to 3x faster fine-tuning — detailed performance benchmarks for Llama 3.1 on NVIDIA GB200 NVL72 hardware.", type: "Blog", url: "https://www.crusoe.ai/resources/blog/benchmarking-llama-3-1-fine-tuning-on-crusoe-cloud-with-nvidia-gb200-nvl72" },
+    { category: "mlops", title: "MemoryAlloy: KV Caching for Cluster-Scale Inference", provider: "Crusoe AI", desc: "Reinventing KV caching for distributed inference — how to manage memory efficiently when serving LLMs across GPU clusters.", type: "Blog", url: "https://www.crusoe.ai/resources/blog/crusoe-memoryalloy-technology-kv-caching" },
+    { category: "mlops", title: "GPU Cluster Orchestration with dstack", provider: "Crusoe AI", desc: "Practical guide to orchestrating GPU clusters using dstack — provisioning, scheduling, and managing distributed AI training jobs.", type: "Blog", url: "https://www.crusoe.ai/resources/blog/gpu-cluster-orchestration-on-crusoe-with-dstack" },
+    { category: "mlops", title: "MLflow", provider: "Databricks", desc: "End-to-end ML lifecycle platform — experiment tracking, model registry, deployment, and reproducibility in one tool.", type: "GitHub", url: "https://github.com/mlflow/mlflow" },
+    { category: "mlops", title: "Langfuse", provider: "Langfuse", desc: "Open-source LLM observability — trace, evaluate, and debug LLM applications in production with detailed analytics.", type: "GitHub", url: "https://github.com/langfuse/langfuse" },
+    { category: "mlops", title: "BentoML", provider: "BentoML", desc: "Build and ship AI applications fast — package models as production-ready APIs with built-in serving and scaling.", type: "GitHub", url: "https://github.com/bentoml/BentoML" },
+    { category: "mlops", title: "Promptfoo", provider: "Community", desc: "Systematic LLM testing and red-teaming — evaluate prompts, compare models, and catch regressions with CI-friendly tests.", type: "GitHub", url: "https://github.com/promptfoo/promptfoo" },
 
     // ── Google AI & Cloud ──
     { category: "google-ai", title: "Google AI Essentials", provider: "Google", desc: "Under 5 hours to learn AI fundamentals, prompt engineering, and responsible AI usage with Google certificate.", type: "Course", url: "https://grow.google/ai-essentials/" },
@@ -111,6 +127,46 @@ const resources = [
     { category: "youtube", title: "3Blue1Brown", provider: "", desc: "Visual explanations of mathematics, linear algebra, calculus, and neural networks with beautiful animations.", type: "Channel", url: "https://www.youtube.com/@3blue1brown" },
     { category: "youtube", title: "Sebastian Raschka", provider: "", desc: "AI researcher sharing tutorials on deep learning, LLMs, research paper walkthroughs, and ML engineering.", type: "Channel", url: "https://www.youtube.com/@SebastianRaschka" },
 
+    // ── AI Frameworks & Libraries ──
+    { category: "ai-frameworks", title: "PyTorch", provider: "Meta", desc: "Dominant deep learning framework with dynamic computation graphs, Pythonic API, and first-class GPU support — the standard for research and production.", type: "GitHub", url: "https://github.com/pytorch/pytorch" },
+    { category: "ai-frameworks", title: "Hugging Face Transformers", provider: "Hugging Face", desc: "De facto standard library for pretrained models — 1M+ models available for NLP, vision, audio, and multimodal tasks.", type: "GitHub", url: "https://github.com/huggingface/transformers" },
+    { category: "ai-frameworks", title: "scikit-learn", provider: "Community", desc: "Industry-standard library for classical ML — classification, regression, clustering, and model evaluation in Python.", type: "GitHub", url: "https://github.com/scikit-learn/scikit-learn" },
+    { category: "ai-frameworks", title: "JAX", provider: "Google", desc: "High-performance numerical computing with composable transformations — JIT compilation, auto-differentiation, and vectorization.", type: "GitHub", url: "https://github.com/jax-ml/jax" },
+    { category: "ai-frameworks", title: "Keras", provider: "Google", desc: "High-level deep learning API running on TensorFlow, JAX, and PyTorch — fastest path from idea to working model.", type: "GitHub", url: "https://github.com/keras-team/keras" },
+    { category: "ai-frameworks", title: "XGBoost", provider: "DMLC", desc: "Scalable gradient boosting library that still dominates Kaggle — the go-to for structured/tabular data.", type: "GitHub", url: "https://github.com/dmlc/xgboost" },
+    { category: "ai-frameworks", title: "Polars", provider: "Community", desc: "Blazing-fast DataFrame library with Rust backend — modern alternative to pandas for large-scale data processing.", type: "GitHub", url: "https://github.com/pola-rs/polars" },
+
+    // ── Inference & Local AI ──
+    { category: "inference-tools", title: "Ollama", provider: "Ollama", desc: "Run LLMs locally with a single command — simple registry, OpenAI-compatible API, and easy model management.", type: "GitHub", url: "https://github.com/ollama/ollama" },
+    { category: "inference-tools", title: "vLLM", provider: "vLLM Project", desc: "State-of-the-art LLM serving engine with PagedAttention — high throughput and low latency for production deployments.", type: "GitHub", url: "https://github.com/vllm-project/vllm" },
+    { category: "inference-tools", title: "llama.cpp", provider: "Georgi Gerganov", desc: "Pure C/C++ LLM inference with GGUF quantization — run models on CPU, GPU, or edge devices without Python.", type: "GitHub", url: "https://github.com/ggerganov/llama.cpp" },
+    { category: "inference-tools", title: "MLX", provider: "Apple", desc: "ML framework optimized for Apple Silicon — run and fine-tune models natively on Mac with unified memory.", type: "GitHub", url: "https://github.com/ml-explore/mlx" },
+    { category: "inference-tools", title: "TensorRT-LLM", provider: "NVIDIA", desc: "NVIDIA's high-performance inference backend — maximum throughput for production LLM serving on NVIDIA GPUs.", type: "GitHub", url: "https://github.com/NVIDIA/TensorRT-LLM" },
+    { category: "inference-tools", title: "SGLang", provider: "SGLang Project", desc: "Next-gen serving framework with RadixAttention — structured generation and fast inference for complex LLM workloads.", type: "GitHub", url: "https://github.com/sgl-project/sglang" },
+
+    // ── Fine-Tuning & Training ──
+    { category: "fine-tuning", title: "Unsloth", provider: "Unsloth AI", desc: "2x faster fine-tuning with 70% less memory — the easiest way to fine-tune Llama, Mistral, and other open models.", type: "GitHub", url: "https://github.com/unslothai/unsloth" },
+    { category: "fine-tuning", title: "LLaMA-Factory", provider: "Community", desc: "Unified fine-tuning framework supporting SFT, DPO, ORPO, and RLHF with a web UI — supports 100+ models.", type: "GitHub", url: "https://github.com/hiyouga/LLaMA-Factory" },
+    { category: "fine-tuning", title: "Axolotl", provider: "Community", desc: "YAML-driven training pipeline — configure and launch fine-tuning jobs for any model with minimal code.", type: "GitHub", url: "https://github.com/axolotl-ai-cloud/axolotl" },
+    { category: "fine-tuning", title: "PEFT", provider: "Hugging Face", desc: "Parameter-efficient fine-tuning library — LoRA, QLoRA, prefix tuning, and adapters for training large models on consumer GPUs.", type: "GitHub", url: "https://github.com/huggingface/peft" },
+    { category: "fine-tuning", title: "TRL", provider: "Hugging Face", desc: "Full-stack RLHF, SFT, DPO, and reward modeling library — train and align language models with human preferences.", type: "GitHub", url: "https://github.com/huggingface/trl" },
+    { category: "fine-tuning", title: "DeepSpeed", provider: "Microsoft", desc: "Extreme-scale training optimization with ZeRO, MoE, and pipeline parallelism — train 100B+ parameter models efficiently.", type: "GitHub", url: "https://github.com/microsoft/DeepSpeed" },
+
+    // ── RAG & Vector Search ──
+    { category: "rag", title: "LlamaIndex", provider: "LlamaIndex", desc: "Full-featured RAG framework with advanced indexing, retrieval strategies, and agent tools for building knowledge-grounded AI apps.", type: "GitHub", url: "https://github.com/run-llama/llama_index" },
+    { category: "rag", title: "LangChain", provider: "LangChain", desc: "Foundational library for building LLM-powered apps — chains, agents, retrieval, and tool integrations in one framework.", type: "GitHub", url: "https://github.com/langchain-ai/langchain" },
+    { category: "rag", title: "Chroma", provider: "Chroma", desc: "Most popular open-source embedding database — simple API for storing, searching, and retrieving vector embeddings.", type: "GitHub", url: "https://github.com/chroma-core/chroma" },
+    { category: "rag", title: "Qdrant", provider: "Qdrant", desc: "High-performance vector search engine built in Rust — production-ready with filtering, payloads, and distributed mode.", type: "GitHub", url: "https://github.com/qdrant/qdrant" },
+    { category: "rag", title: "GraphRAG", provider: "Microsoft", desc: "Knowledge-graph-based retrieval — builds entity graphs from documents for more structured, context-rich AI answers.", type: "GitHub", url: "https://github.com/microsoft/graphrag" },
+    { category: "rag", title: "Haystack", provider: "deepset", desc: "End-to-end NLP and RAG framework — build production search and question-answering pipelines with composable components.", type: "GitHub", url: "https://github.com/deepset-ai/haystack" },
+
+    // ── AI Coding Assistants ──
+    { category: "ai-coding", title: "Continue", provider: "Continue", desc: "Open-source coding autopilot for VS Code and JetBrains — autocomplete, chat, and edit with any LLM, local or cloud.", type: "GitHub", url: "https://github.com/continuedev/continue" },
+    { category: "ai-coding", title: "Aider", provider: "Paul Gauthier", desc: "Terminal-based AI pair programmer — edit files, run commands, and commit changes with natural language from the command line.", type: "GitHub", url: "https://github.com/paul-gauthier/aider" },
+    { category: "ai-coding", title: "OpenHands", provider: "All Hands AI", desc: "Full-featured AI software engineer — autonomously browses, writes code, runs tests, and submits PRs.", type: "GitHub", url: "https://github.com/All-Hands-AI/OpenHands" },
+    { category: "ai-coding", title: "Tabby", provider: "TabbyML", desc: "Self-hosted AI coding assistant — run your own Copilot alternative with full control over models and data privacy.", type: "GitHub", url: "https://github.com/TabbyML/tabby" },
+    { category: "ai-coding", title: "Cline", provider: "Cline", desc: "Autonomous coding agent that lives in your IDE — plans, writes, debugs, and tests code with human-in-the-loop approval.", type: "GitHub", url: "https://github.com/cline/cline" },
+
     // ── Recommended Books ──
     { category: "books", title: "Hands-On ML with Scikit-Learn, Keras & TensorFlow", provider: "Aur\u00e9lien G\u00e9ron", desc: "Go-to practical guide for ML engineers covering end-to-end projects with scikit-learn, Keras, TensorFlow.", type: "Book", url: "https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1098125975" },
     { category: "books", title: "An Introduction to Statistical Learning", provider: "James, Witten, Hastie, Tibshirani", desc: "Widely used textbook for statistical learning methods including regression, classification, and SVMs.", type: "Book", url: "https://www.statlearning.com/" },
@@ -120,23 +176,124 @@ const resources = [
 ];
 
 const categoryMeta = {
-    "all":              { icon: "\u2630", label: "All Topics",               desc: "Browse 75+ curated free resources for AI, ML, Claude Code & Programming" },
-    "cc-awesome":       { icon: "\u2B50", label: "Awesome Lists",            desc: "Community-curated collections of Claude Code tools, plugins, agents & workflows" },
-    "cc-docs":          { icon: "\uD83D\uDCCB", label: "Official Documentation",   desc: "Anthropic's official Claude Code docs — best practices, CLAUDE.md, CLI, sub-agents" },
-    "cc-learn":         { icon: "\uD83C\uDFAF", label: "Tutorials & Courses",      desc: "Step-by-step courses and guides from beginner to advanced agentic workflows" },
-    "cc-patterns":      { icon: "\uD83D\uDEE0", label: "Patterns & Workflows",     desc: "Real-world prompt patterns, repo structures, and automation configurations" },
-    "cc-ecosystem":     { icon: "\uD83D\uDE80", label: "MCP & Ecosystem",          desc: "MCP servers, GitHub Actions, integrations — connect Claude Code to everything" },
-    "ai-agents":        { icon: "\uD83E\uDD16", label: "AI Agents",                desc: "Courses and whitepapers on building agentic AI systems" },
-    "ml-foundations":   { icon: "\uD83E\uDDE0", label: "ML Foundations",            desc: "Core machine learning courses from top universities" },
-    "deep-learning":    { icon: "\uD83D\uDCC8", label: "Deep Learning",            desc: "Neural networks, CNNs, RNNs, transformers and more" },
-    "llm":              { icon: "\uD83D\uDCAC", label: "Large Language Models",    desc: "Understanding and building with LLMs" },
-    "rl":               { icon: "\uD83C\uDFAE", label: "Reinforcement Learning",   desc: "RL fundamentals, DQN, policy gradients & RLHF" },
-    "mlops":            { icon: "\u2699",  label: "MLOps & Production",       desc: "Deploying and maintaining ML systems in production" },
-    "google-ai":        { icon: "\u2601",  label: "Google AI & Cloud",        desc: "Google's AI courses and cloud certifications" },
-    "cs-fundamentals":  { icon: "\uD83D\uDCBB", label: "CS Fundamentals",          desc: "Core computer science courses and concepts" },
-    "career":           { icon: "\uD83D\uDCBC", label: "Career & Development",     desc: "Guidance for building a career in AI" },
-    "free-textbooks":   { icon: "\uD83D\uDCDA", label: "Free Online Textbooks",    desc: "Downloadable textbooks covering ML, math & probability" },
-    "mit-books":        { icon: "\uD83C\uDF93", label: "MIT Free Books",           desc: "Open access books from MIT Press and top researchers" },
-    "youtube":          { icon: "\u25B6",  label: "YouTube Channels",         desc: "Top YouTube channels for learning AI & ML" },
-    "books":            { icon: "\uD83D\uDCD6", label: "Recommended Books",        desc: "Must-read books for ML practitioners" },
+    "all": {
+        icon: "\u2630", label: "All Topics",
+        desc: "Browse 129+ curated free resources for AI, ML, Claude Code & Programming",
+        summary: "This is your complete learning hub. Every resource here is free or open-source. Start with a topic from the sidebar that matches your current goal — whether you're learning ML basics, building agents, or deploying models to production. Use the search bar to find specific tools or concepts across all categories."
+    },
+    "cc-awesome": {
+        icon: "\u2B50", label: "Awesome Lists",
+        desc: "Community-curated collections of Claude Code tools, plugins, agents & workflows",
+        summary: "Why: Awesome lists save you hours of research by compiling the best tools, plugins, and workflows in one place. Instead of searching GitHub yourself, start here. How to use: Browse these lists when you need a new tool, want to discover community plugins, or need inspiration for what Claude Code can do. Bookmark the ones relevant to your stack."
+    },
+    "cc-docs": {
+        icon: "\uD83D\uDCCB", label: "Official Documentation",
+        desc: "Anthropic's official Claude Code docs — best practices, CLAUDE.md, CLI, sub-agents",
+        summary: "Why: Official docs are the single source of truth. Community guides can be outdated, but these are always current. How to use: Read the Overview first, then the Best Practices page. Set up your CLAUDE.md file early — it tells Claude your coding standards and project conventions, saving you from repeating instructions every session."
+    },
+    "cc-learn": {
+        icon: "\uD83C\uDFAF", label: "Tutorials & Courses",
+        desc: "Step-by-step courses and guides from beginner to advanced agentic workflows",
+        summary: "Why: Structured courses teach you the right mental models, not just commands. You'll learn patterns that work in production. How to use: Start with the Quickstart if you're new. Then take the DeepLearning.AI course for real-world workflows like Git worktrees and sub-agent orchestration. These courses are free and take 2-4 hours each."
+    },
+    "cc-patterns": {
+        icon: "\uD83D\uDEE0", label: "Patterns & Workflows",
+        desc: "Real-world prompt patterns, repo structures, and automation configurations",
+        summary: "Why: Knowing commands isn't enough — you need patterns. These repos show how experienced developers structure their projects, write prompts, and configure automation. How to use: Clone the best-practices repos and study their CLAUDE.md files, hook configurations, and skill definitions. Copy the patterns that fit your workflow."
+    },
+    "cc-ecosystem": {
+        icon: "\uD83D\uDE80", label: "MCP & Ecosystem",
+        desc: "MCP servers, GitHub Actions, integrations — connect Claude Code to everything",
+        summary: "Why: MCP (Model Context Protocol) lets Claude Code connect to external tools — databases, APIs, design tools, browsers. This multiplies what Claude can do. How to use: Start with the official MCP guide. Then pick servers relevant to your stack — GitHub MCP for repos, Playwright for browser automation, or database connectors for data work."
+    },
+    "ai-agents": {
+        icon: "\uD83E\uDD16", label: "AI Agents",
+        desc: "Frameworks, courses, and tools for building agentic AI systems",
+        summary: "Why: AI agents are the next frontier — systems that plan, use tools, and complete multi-step tasks autonomously. Understanding agents is essential for any AI developer in 2026. How to use: Start with the courses (Andrew Ng, Microsoft, HuggingFace) to learn the concepts. Then explore frameworks like LangGraph, CrewAI, or AutoGen to build your own. The blog posts show real production challenges."
+    },
+    "ml-foundations": {
+        icon: "\uD83E\uDDE0", label: "ML Foundations",
+        desc: "Core machine learning courses from top universities",
+        summary: "Why: Without strong foundations, you'll hit a ceiling. These university courses teach the math and intuition behind algorithms — not just how to call APIs. How to use: Take Stanford CS229 if you want the full picture. Use CS224N for NLP specifically. The DataCamp course is a faster, hands-on alternative if you prefer learning by building."
+    },
+    "deep-learning": {
+        icon: "\uD83D\uDCC8", label: "Deep Learning",
+        desc: "Neural networks, CNNs, RNNs, transformers and more",
+        summary: "Why: Deep learning powers everything from image recognition to ChatGPT. Understanding architectures helps you pick the right model and debug training issues. How to use: MIT 6.S191 is the best starting point — it's concise and covers all major architectures. Fast.ai teaches you to build working models from day one. Go to DataCamp for PyTorch-specific training."
+    },
+    "llm": {
+        icon: "\uD83D\uDCAC", label: "Large Language Models",
+        desc: "Understanding and building with LLMs",
+        summary: "Why: LLMs are the core technology behind AI assistants, code generators, and knowledge systems. Understanding how they work helps you use them better and build on top of them. How to use: Start with the DataCamp track for a structured introduction. Watch the Stanford lectures for deeper understanding of transformer architecture and training."
+    },
+    "rl": {
+        icon: "\uD83C\uDFAE", label: "Reinforcement Learning",
+        desc: "RL fundamentals, DQN, policy gradients & RLHF",
+        summary: "Why: RL is how AI learns from trial and error — it powers game-playing AI, robotics, and the RLHF step that makes LLMs helpful. How to use: Start with the DataCamp track for fundamentals. If you want to understand how ChatGPT-style models are aligned, focus on the RLHF sections."
+    },
+    "mlops": {
+        icon: "\u2699", label: "MLOps & Production",
+        desc: "Deploying and maintaining ML systems in production",
+        summary: "Why: Building a model is 20% of the work. Deploying, monitoring, and scaling it is the other 80%. MLOps bridges the gap between notebook experiments and reliable production systems. How to use: Start with the MLOps Concepts course for the big picture. Use MLflow for experiment tracking, Langfuse for LLM observability, and BentoML for serving. The Crusoe AI posts cover GPU infrastructure at scale."
+    },
+    "google-ai": {
+        icon: "\u2601", label: "Google AI & Cloud",
+        desc: "Google's AI courses and cloud certifications",
+        summary: "Why: Google offers some of the best free AI courses with certificates. They're short, practical, and teach you to use production tools like Vertex AI and Gemini. How to use: Take AI Essentials first (under 5 hours). Then explore Vertex AI Studio for hands-on model interaction. The skill badge courses count toward Google Cloud certifications."
+    },
+    "cs-fundamentals": {
+        icon: "\uD83D\uDCBB", label: "CS Fundamentals",
+        desc: "Core computer science courses and concepts",
+        summary: "Why: Strong CS fundamentals make you a better AI developer. Data structures, algorithms, and computational thinking are prerequisites for understanding how models work under the hood. How to use: CS50 is the gold standard introduction — even experienced developers learn from it. The business professionals variant is great if you're non-technical and transitioning into AI."
+    },
+    "career": {
+        icon: "\uD83D\uDCBC", label: "Career & Development",
+        desc: "Guidance for building a career in AI",
+        summary: "Why: The AI job market is competitive and fast-moving. Expert guidance helps you focus on the right skills and avoid common mistakes. How to use: Watch the career advice video to understand which AI roles exist, what companies look for, and how to position yourself. Then build a portfolio using projects from the other categories here."
+    },
+    "free-textbooks": {
+        icon: "\uD83D\uDCDA", label: "Free Online Textbooks",
+        desc: "Downloadable textbooks covering ML, math & probability",
+        summary: "Why: Textbooks give you depth that courses don't. When you need to understand why an algorithm works (not just how to use it), these are your reference. How to use: Don't read cover to cover. Use them as reference material — look up specific topics when you get stuck. Start with Mathematics for Machine Learning for the math prerequisites, or Understanding Machine Learning for theory."
+    },
+    "mit-books": {
+        icon: "\uD83C\uDF93", label: "MIT Free Books",
+        desc: "Open access books from MIT Press and top researchers",
+        summary: "Why: MIT Press publishes some of the most rigorous and respected AI textbooks, and many are now open access. These are the same books used in top university courses. How to use: Understanding Deep Learning (UDL) is the most modern and comprehensive — start there for a current view. The Sutton & Barto RL book is the definitive reference for reinforcement learning. Use the Goodfellow deep learning book for classical foundations."
+    },
+    "youtube": {
+        icon: "\u25B6", label: "YouTube Channels",
+        desc: "Top YouTube channels for learning AI & ML",
+        summary: "Why: Video explanations build intuition faster than text for visual topics like neural networks and linear algebra. These creators are the best at making complex topics accessible. How to use: Watch 3Blue1Brown for mathematical intuition, StatQuest for statistics and ML basics, Andrej Karpathy for neural network deep dives, and Sebastian Raschka for research paper walkthroughs. Subscribe and watch regularly."
+    },
+    "books": {
+        icon: "\uD83D\uDCD6", label: "Recommended Books",
+        desc: "Must-read books for ML practitioners",
+        summary: "Why: These are the books that experienced ML engineers recommend most often. Each one fills a different gap — from practical coding to theory to project management. How to use: Start with Hands-On ML (Geron) if you learn by coding. Read The Hundred-Page ML Book for a fast overview. Use Machine Learning Yearning (Andrew Ng) when you're leading a project and need to make strategic decisions."
+    },
+    "ai-frameworks": {
+        icon: "\uD83D\uDD27", label: "AI Frameworks & Libraries",
+        desc: "Essential open-source frameworks for building AI — PyTorch, Transformers, scikit-learn & more",
+        summary: "Why: These are the building blocks of every AI project. Knowing which framework to use and when saves you weeks of wrong turns. How to use: Learn PyTorch for deep learning (it's the industry standard). Use Hugging Face Transformers for any pretrained model task. Start with scikit-learn for classical ML. Use Polars instead of pandas when your data gets large. Pick XGBoost for tabular/structured data competitions."
+    },
+    "inference-tools": {
+        icon: "\u26A1", label: "Inference & Local AI",
+        desc: "Run and serve LLMs locally or at scale — Ollama, vLLM, llama.cpp & more",
+        summary: "Why: Running models locally gives you privacy, zero API costs, and full control. For production, high-performance serving is the difference between a demo and a real product. How to use: Start with Ollama for the easiest local setup (one command to run any model). Use llama.cpp for maximum hardware efficiency. When you're ready for production serving, vLLM and TensorRT-LLM handle thousands of requests per second. Use MLX if you're on Apple Silicon."
+    },
+    "fine-tuning": {
+        icon: "\uD83C\uDFAF", label: "Fine-Tuning & Training",
+        desc: "Tools for fine-tuning, RLHF, LoRA, and distributed training of large models",
+        summary: "Why: Fine-tuning turns a general model into one that's expert at your specific task. With LoRA and QLoRA, you can fine-tune 7B+ models on a single consumer GPU. How to use: Start with Unsloth for the easiest and fastest fine-tuning experience. Use LLaMA-Factory if you want a web UI. PEFT provides the building blocks for parameter-efficient methods. TRL is essential if you're doing RLHF or DPO alignment. Use DeepSpeed when scaling to multiple GPUs."
+    },
+    "rag": {
+        icon: "\uD83D\uDD0D", label: "RAG & Vector Search",
+        desc: "Build retrieval-augmented generation systems with vector databases and knowledge graphs",
+        summary: "Why: RAG lets your AI answer questions using your own data — documents, databases, knowledge bases — without expensive fine-tuning. It's the most practical way to build useful AI apps. How to use: Start with LangChain or LlamaIndex for the framework. Pick Chroma for prototyping (simplest setup) or Qdrant for production (faster, more features). Use GraphRAG when your data has complex relationships. Haystack is great for search-focused applications."
+    },
+    "ai-coding": {
+        icon: "\uD83D\uDCBB", label: "AI Coding Assistants",
+        desc: "Open-source AI-powered coding tools — IDE extensions, terminal agents & pair programmers",
+        summary: "Why: AI coding tools multiply your productivity — they write boilerplate, catch bugs, and handle refactoring. Open-source options give you privacy and model choice. How to use: Install Continue in VS Code or JetBrains for inline assistance. Use Aider from the terminal for quick file edits. Try OpenHands when you want an agent that handles entire tasks autonomously. Tabby is perfect if you need a self-hosted Copilot alternative with data privacy."
+    },
 };

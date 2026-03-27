@@ -104,6 +104,19 @@ function filterAndRender() {
     header.querySelector("h2").textContent = meta.label;
     header.querySelector("p").textContent = meta.desc;
 
+    // Render summary guide if available
+    const existingSummary = header.querySelector(".topic-summary");
+    if (existingSummary) existingSummary.remove();
+
+    if (meta.summary) {
+        const summaryEl = document.createElement("div");
+        summaryEl.className = "topic-summary";
+        summaryEl.innerHTML = meta.summary
+            .replace(/Why:/g, '<strong>Why:</strong>')
+            .replace(/How to use:/g, '<strong>How to use:</strong>');
+        header.appendChild(summaryEl);
+    }
+
     renderCards(filtered);
 }
 
