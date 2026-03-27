@@ -10,6 +10,7 @@ function badgeClass(type) {
     if (t === "docs")       return "badge-docs";
     if (t === "blog")       return "badge-blog";
     if (t === "website")    return "badge-website";
+    if (t === "guide")      return "badge-video";
     return "badge-course";
 }
 
@@ -94,7 +95,9 @@ function positionPopup(cardEl) {
 function showPopup(resource, cardEl) {
     clearTimeout(popupTimer);
     const meta = categoryMeta[resource.category] || {};
-    const { why, how } = extractSections(meta.summary);
+    const catSections = extractSections(meta.summary);
+    const why = resource.why || catSections.why;
+    const how = resource.how || catSections.how;
 
     popup.innerHTML = `
         <div class="popup-header">
