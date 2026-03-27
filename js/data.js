@@ -31,6 +31,17 @@ const resources = [
     { category: "cc-ecosystem", title: "Claude-Optimized MCP Servers", provider: "Community", desc: "MCP servers specifically optimized and tested for Claude Code — browser automation, design tools, data pipelines.", type: "GitHub", url: "https://github.com/win4r/Awesome-Claude-MCP-Servers" },
     { category: "cc-ecosystem", title: "MCP Integration Guide", provider: "Anthropic", desc: "Official guide to configuring and using MCP servers with Claude Code — setup, authentication, and real-world integration examples.", type: "Docs", url: "https://code.claude.com/docs/en/mcp" },
     { category: "cc-ecosystem", title: "Crusoe Cloud MCP Server", provider: "Crusoe AI", desc: "MCP server for Crusoe Cloud — manage GPU instances, inference endpoints, and AI infrastructure directly from Claude Code.", type: "Blog", url: "https://www.crusoe.ai/resources/blog/introducing-the-crusoe-cloud-mcp-server" },
+    { category: "cc-ecosystem", title: "Anthropic Skills Library", provider: "Anthropic", desc: "Official Anthropic-curated Claude Code skills — production-ready, reusable skill definitions you can drop directly into your project. Save hours over writing skills from scratch.", type: "GitHub", url: "https://github.com/anthropics/skills" },
+    { category: "cc-ecosystem", title: "Claude Code (Official Repo)", provider: "Anthropic", desc: "The official open-source repository for Claude Code — track releases, report issues, read the changelog, and contribute. Essential if you want to stay current with new features.", type: "GitHub", url: "https://github.com/anthropics/claude-code" },
+    { category: "cc-ecosystem", title: "Superpowers for Claude", provider: "obra", desc: "A battle-tested set of command-line extensions that push Claude Code further — custom tools and utilities built by a veteran developer to handle real production workflows.", type: "GitHub", url: "https://github.com/obra/superpowers" },
+    { category: "cc-ecosystem", title: "claude-mem", provider: "thedotmack", desc: "Persistent memory layer for Claude Code — store context across sessions so Claude remembers your project decisions, preferences, and past work without repeating yourself every time.", type: "GitHub", url: "https://github.com/thedotmack/claude-mem" },
+    { category: "cc-ecosystem", title: "UI/UX Pro Max Skill", provider: "nextlevelbuilder", desc: "Advanced Claude Code skill for UI/UX work — design-aware prompting patterns and commands that help Claude produce professional-grade interfaces rather than generic scaffolding.", type: "GitHub", url: "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill" },
+    { category: "cc-ecosystem", title: "Open Claude Cowork", provider: "Composio", desc: "Multi-agent collaborative workspace powered by Claude — run coordinated Claude instances in a shared environment to tackle complex, parallelizable tasks that exceed a single context window.", type: "GitHub", url: "https://github.com/composiohq/open-claude-cowork" },
+
+    // ── Prompt Engineering ──
+    { category: "prompt-eng", title: "Prompt Engineering Interactive Tutorial", provider: "Anthropic", desc: "Hands-on, browser-based tutorial from Anthropic covering prompt structure, chain-of-thought, few-shot examples, and advanced techniques — the best place to start if you want to write effective prompts.", type: "GitHub", url: "https://github.com/anthropics/prompt-eng-interactive-tutorial" },
+    { category: "prompt-eng", title: "Anthropic Courses", provider: "Anthropic", desc: "Official educational courses from Anthropic covering Claude API usage, prompt engineering, tool use, and building real applications — taught directly by the team that built Claude.", type: "GitHub", url: "https://github.com/anthropics/courses" },
+    { category: "prompt-eng", title: "Claude Cookbooks", provider: "Anthropic", desc: "Ready-to-run Jupyter notebooks demonstrating real-world patterns — tool use, RAG pipelines, multi-modal tasks, and agentic workflows using Claude's API. A practical companion to the official docs.", type: "GitHub", url: "https://github.com/anthropics/claude-cookbooks" },
 
     // ── AI Agents ──
     { category: "ai-agents", title: "Agentic AI with Andrew Ng", provider: "DeepLearning.AI", desc: "Build agentic AI systems with iterative, multi-step workflows. Learn reflection, tool use, planning, and multi-agent patterns.", type: "Course", url: "https://www.deeplearning.ai/courses/agentic-ai" },
@@ -52,6 +63,9 @@ const resources = [
     { category: "ai-agents", title: "AutoGen", provider: "Microsoft", desc: "Flexible multi-agent conversation platform — agents chat, plan, and execute code together to solve problems.", type: "GitHub", url: "https://github.com/microsoft/autogen" },
     { category: "ai-agents", title: "DSPy", provider: "Stanford NLP", desc: "Programming framework for LLM pipelines — replace prompt engineering with modular, optimizable programs.", type: "GitHub", url: "https://github.com/stanfordnlp/dspy" },
     { category: "ai-agents", title: "MetaGPT", provider: "Community", desc: "Simulates an AI software company — multi-agent system where agents take roles like PM, architect, and engineer.", type: "GitHub", url: "https://github.com/FoundationAgents/MetaGPT" },
+    { category: "ai-agents", title: "Openwork", provider: "different-ai", desc: "Open-source autonomous work agent — delegate entire workflows to AI that plans, researches, and executes multi-step tasks end to end without hand-holding.", type: "GitHub", url: "https://github.com/different-ai/openwork" },
+    { category: "ai-agents", title: "Agent Bank", provider: "different-ai", desc: "Library of pre-built, reusable AI agents for common tasks — drop-in agents for research, writing, data analysis, and code review so you don't build from scratch every time.", type: "GitHub", url: "https://github.com/different-ai/agent-bank" },
+    { category: "ai-agents", title: "Awesome LLM Apps", provider: "Shubhamsaboo", desc: "Curated collection of real, runnable LLM-powered applications with full source code — see how others built agents, RAG systems, and AI products and adapt their patterns for your own.", type: "GitHub", url: "https://github.com/Shubhamsaboo/awesome-llm-apps" },
 
     // ── ML Foundations ──
     { category: "ml-foundations", title: "Stanford CS229: Machine Learning", provider: "Stanford University", desc: "Graduate-level course by Andrew Ng covering supervised learning, unsupervised learning, neural networks, SVMs, and reinforcement learning.", type: "Course", url: "https://see.stanford.edu/course/cs229" },
@@ -120,6 +134,7 @@ const resources = [
     { category: "mit-books", title: "Multi-Agent Reinforcement Learning", provider: "", desc: "Comprehensive resource on MARL covering cooperative and competitive multi-agent environments.", type: "Book", url: "https://marl-book.com" },
     { category: "mit-books", title: "Agents in the Long Game of AI", provider: "MIT Press", desc: "Open access book exploring role of AI agents in long-term AI development.", type: "Book", url: "https://direct.mit.edu/books/oa-monograph-pdf/2471103/book_9780262380355.pdf" },
     { category: "mit-books", title: "Fairness and Machine Learning", provider: "", desc: "Explores limitations and opportunities in fairness-aware ML covering bias detection and algorithmic fairness.", type: "Book", url: "https://fairmlbook.org" },
+    { category: "mit-books", title: "Machine Learning Systems (CS249r)", provider: "Harvard Edge", desc: "Open-access book on TinyML and efficient deep learning from Harvard — covers deploying ML on edge devices and resource-constrained hardware. Essential if you care about running AI beyond the cloud.", type: "GitHub", url: "https://github.com/harvard-edge/cs249r_book" },
 
     // ── YouTube Channels ──
     { category: "youtube", title: "Andrej Karpathy", provider: "", desc: "Former Tesla AI Director sharing deep dives into neural networks, GPT internals, and building AI from scratch.", type: "Channel", url: "https://www.youtube.com/@AndrejKarpathy" },
@@ -143,6 +158,7 @@ const resources = [
     { category: "inference-tools", title: "MLX", provider: "Apple", desc: "ML framework optimized for Apple Silicon — run and fine-tune models natively on Mac with unified memory.", type: "GitHub", url: "https://github.com/ml-explore/mlx" },
     { category: "inference-tools", title: "TensorRT-LLM", provider: "NVIDIA", desc: "NVIDIA's high-performance inference backend — maximum throughput for production LLM serving on NVIDIA GPUs.", type: "GitHub", url: "https://github.com/NVIDIA/TensorRT-LLM" },
     { category: "inference-tools", title: "SGLang", provider: "SGLang Project", desc: "Next-gen serving framework with RadixAttention — structured generation and fast inference for complex LLM workloads.", type: "GitHub", url: "https://github.com/sgl-project/sglang" },
+    { category: "inference-tools", title: "Free LLM API Resources", provider: "cheahjs", desc: "Comprehensive, up-to-date list of free-tier LLM APIs across providers — find free access to GPT, Claude, Gemini, Llama, and more so you can prototype and build without upfront API costs.", type: "GitHub", url: "https://github.com/cheahjs/free-llm-api-resources" },
 
     // ── Fine-Tuning & Training ──
     { category: "fine-tuning", title: "Unsloth", provider: "Unsloth AI", desc: "2x faster fine-tuning with 70% less memory — the easiest way to fine-tune Llama, Mistral, and other open models.", type: "GitHub", url: "https://github.com/unslothai/unsloth" },
@@ -166,6 +182,8 @@ const resources = [
     { category: "ai-coding", title: "OpenHands", provider: "All Hands AI", desc: "Full-featured AI software engineer — autonomously browses, writes code, runs tests, and submits PRs.", type: "GitHub", url: "https://github.com/All-Hands-AI/OpenHands" },
     { category: "ai-coding", title: "Tabby", provider: "TabbyML", desc: "Self-hosted AI coding assistant — run your own Copilot alternative with full control over models and data privacy.", type: "GitHub", url: "https://github.com/TabbyML/tabby" },
     { category: "ai-coding", title: "Cline", provider: "Cline", desc: "Autonomous coding agent that lives in your IDE — plans, writes, debugs, and tests code with human-in-the-loop approval.", type: "GitHub", url: "https://github.com/cline/cline" },
+    { category: "ai-coding", title: "Opencode", provider: "different-ai", desc: "Open-source AI coding assistant for the terminal — a privacy-first, model-flexible alternative to proprietary tools with full local-first design and no vendor lock-in.", type: "GitHub", url: "https://github.com/different-ai/opencode" },
+    { category: "ai-coding", title: "Opencode Browser", provider: "different-ai", desc: "Browser extension companion to Opencode — brings AI coding assistance into web-based workflows, documentation reading, and online development environments.", type: "GitHub", url: "https://github.com/different-ai/opencode-browser" },
 
     // ── Recommended Books ──
     { category: "books", title: "Hands-On ML with Scikit-Learn, Keras & TensorFlow", provider: "Aur\u00e9lien G\u00e9ron", desc: "Go-to practical guide for ML engineers covering end-to-end projects with scikit-learn, Keras, TensorFlow.", type: "Book", url: "https://www.amazon.com/Hands-Machine-Learning-Scikit-Learn-TensorFlow/dp/1098125975" },
@@ -173,12 +191,22 @@ const resources = [
     { category: "books", title: "The Hundred-Page Machine Learning Book", provider: "Andriy Burkov", desc: "Concise yet comprehensive overview of machine learning perfect for quick reference and exam preparation.", type: "Book", url: "https://themlbook.com/" },
     { category: "books", title: "Machine Learning Yearning", provider: "Andrew Ng", desc: "Practical guide focused on structuring ML projects, diagnosing errors, and strategic decision-making.", type: "Book", url: "https://info.deeplearning.ai/machine-learning-yearning-book" },
     { category: "books", title: "Pattern Recognition and Machine Learning", provider: "Christopher M. Bishop", desc: "Comprehensive textbook covering probability distributions, linear models, kernel methods, and graphical models.", type: "Book", url: "https://www.microsoft.com/en-us/research/publication/pattern-recognition-machine-learning/" },
+
+    // ── AI-Powered Tools & Platforms ──
+    { category: "ai-tools", title: "Rocket.new Templates", provider: "Rocket.new", desc: "Production-ready app templates designed for AI-era projects — launch full-stack applications fast with pre-built patterns for common product use cases so you spend time on features, not scaffolding.", type: "Website", url: "https://www.rocket.new/templates" },
+    { category: "ai-tools", title: "Verdent AI", provider: "Verdent", desc: "AI-powered development environment combining agentic coding, multi-model planning, and intelligent code review in one tool — think of it as Claude Code with a full IDE experience built around it.", type: "Website", url: "https://www.verdent.ai/" },
+    { category: "ai-tools", title: "Compyle AI", provider: "Compyle", desc: "AI-powered code compilation and analysis platform — get instant intelligent insights into your codebase, spot issues early, and get refactoring suggestions without manual review.", type: "Website", url: "https://www.compyle.ai/" },
+    { category: "ai-tools", title: "CTO.new", provider: "CTO.new", desc: "AI CTO assistant for technical decision-making — get architecture advice, technology stack recommendations, and engineering strategy guidance when you don't have a senior engineer to ask.", type: "Website", url: "https://cto.new/" },
+    { category: "ai-tools", title: "Lovart AI", provider: "Lovart", desc: "AI-powered design and creative generation platform — create professional visuals, UI mockups, and assets with natural language prompts, ideal for developers who need design output without a designer.", type: "Website", url: "https://www.lovart.ai/" },
+
+    // ── AI News & Tutorials ──
+    { category: "ai-news", title: "The Unwind AI — Tutorial Archive", provider: "The Unwind AI", desc: "Curated archive of hands-on AI tutorials filtered by topic — practical walkthroughs for the latest tools, models, and workflows. Read this when you want to discover what's new and actually build with it.", type: "Blog", url: "https://www.theunwindai.com/archive?tags=AI+Tutorial" },
 ];
 
 const categoryMeta = {
     "all": {
         icon: "\u2630", label: "All Topics",
-        desc: "Browse 129+ curated free resources for AI, ML, Claude Code & Programming",
+        desc: "Browse 150+ curated free resources for AI, ML, Claude Code & Programming",
         summary: "This is your complete learning hub. Every resource here is free or open-source. Start with a topic from the sidebar that matches your current goal — whether you're learning ML basics, building agents, or deploying models to production. Use the search bar to find specific tools or concepts across all categories."
     },
     "cc-awesome": {
@@ -295,5 +323,20 @@ const categoryMeta = {
         icon: "\uD83D\uDCBB", label: "AI Coding Assistants",
         desc: "Open-source AI-powered coding tools — IDE extensions, terminal agents & pair programmers",
         summary: "Why: AI coding tools multiply your productivity — they write boilerplate, catch bugs, and handle refactoring. Open-source options give you privacy and model choice. How to use: Install Continue in VS Code or JetBrains for inline assistance. Use Aider from the terminal for quick file edits. Try OpenHands when you want an agent that handles entire tasks autonomously. Tabby is perfect if you need a self-hosted Copilot alternative with data privacy."
+    },
+    "prompt-eng": {
+        icon: "\u270D", label: "Prompt Engineering",
+        desc: "Master prompt design with official Anthropic tutorials, cookbooks, and courses",
+        summary: "Why: Prompt engineering is the most high-leverage skill for working with AI — the same model gives vastly different results depending on how you prompt it. Even a 10% improvement in prompt quality compounds across every task. How to use: Start with the Interactive Tutorial for hands-on exercises that build real intuition. Then explore the Cookbooks for copy-paste patterns. Take the Anthropic Courses for a complete, end-to-end structured curriculum."
+    },
+    "ai-tools": {
+        icon: "\uD83D\uDEE0", label: "AI-Powered Tools",
+        desc: "Platforms and tools that use AI to accelerate building, designing, and shipping",
+        summary: "Why: AI-native tools compress months of work into hours. These platforms handle scaffolding, design, architecture advice, and code analysis so you can focus on what's unique about your product. How to use: Use Rocket.new templates to bootstrap a new project fast. Use CTO.new when you need architecture guidance on a hard decision. Lovart handles design when you don't have a designer. Verdent and Compyle integrate directly into your development workflow."
+    },
+    "ai-news": {
+        icon: "\uD83D\uDCF0", label: "AI News & Tutorials",
+        desc: "Newsletter archives and tutorial blogs to stay current with fast-moving AI developments",
+        summary: "Why: The AI field moves faster than any course can track — new tools, models, and workflows appear weekly. Staying current gives you a real advantage. How to use: Bookmark The Unwind AI archive and filter by 'AI Tutorial' to find hands-on walkthroughs of the latest releases. Read regularly to discover new tools before they go mainstream."
     },
 };
